@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    <ListView
+        android:id="@+id/slistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+    
+    <RelativeLayout 
+    android:id="@+id/fuView"
+    android:visibility="gone"
+    android:layout_centerInParent="true"
+    android:layout_width="120dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sharp_item_on_border" >
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp"
+        android:text="时间" />
+
+    <TextView
+        android:id="@+id/tv_carNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_car"
+        android:layout_alignTop="@+id/iv_car"
+        android:layout_below="@+id/tv_time"
+        android:layout_toRightOf="@+id/iv_car"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="carNo" />
+
+    <ImageView
+        android:id="@+id/iv_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:src="@drawable/ic_launcher" />
+
+    <View
+        android:id="@+id/iv_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/tv_carNo"
+        android:background="#000000" />
+
+    <TextView
+        android:id="@+id/tv_yuangong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_fuwu"
+        android:layout_alignTop="@+id/iv_line"
+        android:layout_below="@+id/iv_line"
+        android:layout_toRightOf="@+id/iv_fuwu"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="员工" />
+
+    <ImageView
+        android:id="@+id/iv_fuwu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_line"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>
+</RelativeLayout>

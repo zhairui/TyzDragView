@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.tyz.dds.DragLayer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drag_layer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <com.tyz.dds.WorkSpaceBgView
+        android:id="@+id/work_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:longClickable="true"
+        android:orientation="vertical" >
+    </com.tyz.dds.WorkSpaceBgView>
+    
+    <LinearLayout
+        android:id="@+id/ll_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</com.tyz.dds.DragLayer>
